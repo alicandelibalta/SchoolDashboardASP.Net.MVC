@@ -1,0 +1,47 @@
+﻿
+@using SchoolDashboardMVC.View_Models;
+
+@model CreateStudentVM
+@{
+	ViewData["Title"] = "Add Student";
+}
+
+
+    <div class="col-5">
+        <form asp-action="AddStudent" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-black"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Name</label>
+                <input class="form-control" asp-for="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Surname" class="control-label">Surname</label>
+                <input class="form-control" asp-for="Surname" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentNumber" class="control-label">Student Number</label>
+                <input class="form-control" asp-for="StudentNumber" />
+                <span asp-validation-for="StudentNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TcNumber" class="control-label">Tc Number</label>
+                <input class="form-control" asp-for="TcNumber" />
+                <span asp-validation-for="TcNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nationality" class="control-label">Nationality</label>
+                <input class="form-control" asp-for="Nationality" />
+                <span asp-validation-for="Nationality" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary bg-body" value="Add Student" />
+            </div>
+        </form>
+
+    </div>
+
+
+

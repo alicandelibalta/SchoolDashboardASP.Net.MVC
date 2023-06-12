@@ -1,0 +1,58 @@
+﻿@using SchoolDashboardMVC.View_Models;
+
+
+@model CreateTeacherVM
+@{
+    ViewData["Title"] = "Add Teacher";
+}
+
+
+
+
+<div class="col-5">
+    <form asp-action="AddTeacher" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-black"></div>
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input class="form-control" asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Surname" class="control-label"></label>
+            <input class="form-control" asp-for="Surname" />
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TcNumber" class="control-label">Tc Number</label>
+            <input class="form-control" asp-for="TcNumber" />
+            <span asp-validation-for="TcNumber" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nationality" class="control-label"></label>
+            <input class="form-control" asp-for="Nationality" />
+            <span asp-validation-for="Nationality" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="GraduationSchool" class="control-label">Graduation School</label>
+            <input class="form-control" asp-for="GraduationSchool" />
+            <span asp-validation-for="GraduationSchool" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="GraduationMajor" class="control-label">Graduation Major</label>
+            <input class="form-control" asp-for="GraduationMajor" />
+            <span asp-validation-for="GraduationMajor" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="GraduationYear" class="control-label">Graduation Year</label>
+            <input class="form-control" asp-for="GraduationYear" />
+            <span asp-validation-for="GraduationYear" class="text-danger"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary bg-body" value="Add Teacher" />
+        </div>
+    </form>
+
+</div>
+
+

@@ -1,0 +1,43 @@
+﻿@using SchoolDashboardMVC.View_Models
+
+@model List<StudentVM>
+@{
+	ViewData["Title"] = "Student List";
+}	
+
+
+<table class="table table-bordered table-hover border-0">
+	<thead>
+		<tr>
+			<th>
+				Student Name
+			</th>
+			<th>
+				Student Surname
+			</th>
+
+		</tr>
+		
+	</thead>
+	<tbody>
+		@foreach (var x in Model)
+		{
+			<tr>
+				<td>
+					@x.Name
+				</td>
+				<td>
+					@x.Surname
+				</td>
+			</tr>
+		}
+	
+
+	</tbody>
+
+</table>
+
+
+
+
+
