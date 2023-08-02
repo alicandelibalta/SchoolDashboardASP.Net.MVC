@@ -13,7 +13,7 @@ namespace SchoolDashboardMVC.Models
         [MaxLength(length: 10, ErrorMessage = "Must be shorter than 10 character!")]
         public string Surname { get; set; }
 
-
+        public int MyProperty { get; set; }
 
     }
 }
