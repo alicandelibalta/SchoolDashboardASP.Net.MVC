@@ -25,5 +25,6 @@ namespace SchoolDashboardMVC.Models
         public int MyProperty1 { get; set; }
 
         //blabla yeni commit için deneme
+        public int MyProperty2 { get; set; }
     }
 }
