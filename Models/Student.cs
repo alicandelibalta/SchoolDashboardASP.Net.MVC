@@ -19,9 +19,12 @@ namespace SchoolDashboardMVC.Models
         [MaxLength(13)]
         public string PhoneNumber { get; set; }
 
-        StudentClass StudentClass { get; set; }
+        public StudentClass StudentClass { get; set; }
 
         //github deneme propu
         public int MyProperty1 { get; set; }
+
+        //blabla yeni commit için deneme
+        public int MyProperty2 { get; set; }
     }
 }
