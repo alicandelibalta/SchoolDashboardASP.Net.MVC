@@ -23,5 +23,6 @@ namespace SchoolDashboardMVC.Models
 
         //github deneme propu
         public int MyProperty1 { get; set; }
+
     }
 }
